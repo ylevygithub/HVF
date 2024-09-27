@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        <meta name="google-site-verification" content="L-01_FgPpqZ9P7E7OVG1-F9Jr9eEsbA46Ih4cDoW87U" />
+        {{- partial "head.html" . -}}
+        {{- partial "extendhead.html" . -}}
+    </head>
+    <body>
+        {{- partial "header.html" . -}}
+        <main>
+        {{- block "main" . }}{{- end }}
+        </main>
+        {{- partial "footer.html" . -}}
+        {{- partial "scripts.html" . -}}
+    </body>
+</html>

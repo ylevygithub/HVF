@@ -1,0 +1,176 @@
+---
+baseURL: https://honokokona.netlify.app/
+languageCode: en-us
+title: Honokokona Veggie Farm - HVF
+theme: piko
+paginate: '9'
+copyright: The best honokokona farmers in Japan
+googleAnalytics: # Enter Google Analytics ie. UA-012345678-9
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepWhitespace: false
+
+params:
+  analytics:
+    google:
+      SiteVerificationTag: # Google Site Verification
+    yandex:
+      SiteVerificationTag: # Yandex Site Verification
+    bing:
+      SiteVerificationTag: # Bing Site Verification
+  env: production
+  author: Honokokona Veggie Farm Inc.
+  description: Honokokona Veggie Farm is a family owned and operated farm in Japan. We grow the best honokokona spice variety in the world and sell it to businesses and individuals..
+  math: false
+  images:
+    - '/uploads/og.webp'
+  label:
+    title: _Honokokona Veggie Farm_
+    text: Welcome to Honokokona Veggie Farm
+    lightNavIcon: /uploads/logo.svg
+    darkNavIcon: /uploads/logo.svg
+    iconHeight: '35'
+    iconWIdth: '35'
+  comments: false
+  mainSections:
+    - blog
+  ShowShareButtons: false
+  ShowCodeCopyButtons: true
+  ShowRelated: true
+  CookieNotice: We use cookies to improve your experience on our site and to show
+    you relevant advertising.
+  CookieLink: /legal/privacy/#cookies-and-web-beacons
+  CookieButton: Cookies Policy
+  disableAnchoredHeadings: false
+  contactFormAction: https://fabform.io/f/WxM_dfH
+  assets:
+    disableFingerprinting: false
+    favicon: /uploads/logo.svg
+    favicon16x16: /uploads/logo.svg
+    favicon32x32: /uploads/logo.svg
+    apple_touch_icon: /uploads/logo.svg
+    safari_pinned_tab: /uploads/logo.svg
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  homepage:
+    # Hero Section
+    disableHeroSection: false
+    heroUpperTitle: Honokokona Veggie Farm Inc.
+    heroTitle: We are a company of farmers in Northen Japan, in Yamanashi prefecture providing the best quality of honokokona (ほのここな) spice, and it's all organic!
+    heroDescription: We are a family owned and operated farm in Japan. We grow the best honokokona spice variety in the world and sell it to businesses and individuals.
+    heroCTAPrimaryText: News
+    heroCTAPrimaryUrl: '/blog/'
+    heroCTASecondaryText: Contact Us
+    heroCTASecondaryUrl: '/contact/'
+    heroCTATertiaryText: Products
+    heroCTATertiaryUrl: '/products/'
+    heroBackgroundImage: '/uploads/og-image.webp'
+    # Blog Section
+    disableBlogSection: false
+    blogTitle: Latest News
+    blogDescription: Here you can find the latest news about our farm.
+    seeMoreText: More Posts
+    # About Section
+    disableAboutSection: false
+    aboutTitle: About
+    aboutDescription: About Us and Our Farm
+    aboutImgUrl: '/uploads/about.webp'
+    aboutContent: The story of DragonSpices began with a simple idea to create vegan spices that would enhance dragon feasts and allow fantasy chefs to bring their most daring creations to life. Founded by a group of passionate foodies, our company took off with the vision of becoming the benchmark for quality vegan dragon spices.
+    # Portfolio Section
+    disablePortfolioSection: true
+    portfolioTitle: Portfolio
+    portfolioDescription: Some of my works
+    portfolio:
+      - imageUrl: /uploads/portfolio-1.webp
+        alt: # image alt for better SEO
+        description: Portfolio One.
+        websiteUrl: #
+      - imageUrl: /uploads/portfolio-2.webp
+        alt: # image alt for better SEO
+        description: Portfolio Two.
+        websiteUrl: #
+      - imageUrl: /uploads/portfolio-3.webp
+        alt: # image alt for better SEO
+        description: Portfolio Three.
+        websiteUrl: #
+  # Search Options (https://fusejs.io/)
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: '0'
+    distance: '1000'
+    threshold: '0.4'
+    minMatchCharLength: '0'
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+  plugins:
+    css:
+      - link: plugins/css/pico.min.css
+    js:
+      - link: plugins/js/feather.min.js
+menus:
+  main: # Main Menu
+    - name: Blog
+      title: Blog
+      pre: pen-tool
+      url: '/blog'
+      weight: '20'
+    - name: Search
+      title: Search
+      pre: search
+      url: '/search'
+      weight: '30'
+    - name: Contact
+      title: Contact
+      pre: mail
+      url: '/contact'
+      weight: '40'
+    - name: About Us
+      title: About Us
+      pre: mail
+      url: '/aboutUs'
+      weight: '40'
+    - name: Products
+      title: Products
+      pre: package
+      url: '/products'
+      weight: '40'
+  search: # Search page's quick links
+    - name: Categories
+      title: Categories
+      url: '/categories'
+      weight: '10'
+    - name: Archives
+      title: Archives
+      url: '/archives'
+      weight: '20'
+    - name: Tags
+      title: Tags
+      url: '/tags'
+      weight: '30'
+    - name: Products
+      title: Products
+      pre: products
+      url: '/products'
+      weight: '40'
